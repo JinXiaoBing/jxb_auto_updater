@@ -54,6 +54,7 @@ AutoUpdater::AutoUpdater() {
 AutoUpdater::~AutoUpdater() {}
 
 void AutoUpdater::SetFeedURL(std::string feedURL) {
+  win_sparkle_set_lang("en");
   win_sparkle_set_appcast_url(feedURL.c_str());
   win_sparkle_init();
 
